@@ -1,11 +1,3 @@
-/*
- * Photon
- * http://photon.attasi.com
- *
- * Licensed under the MIT license.
- * Copyright 2012 Tom Giannattasio
- */
-
 
 
 var Photon = {
@@ -262,27 +254,7 @@ Photon.FaceGroup.prototype = {
 
 
 
-// === Sylvester ===
-// Vector and Matrix mathematics modules for JavaScript
-// Copyright (c) 2007 James Coglan
-// 
-// Permission is hereby granted, free of charge, to any person obtaining
-// a copy of this software and associated documentation files (the "Software"),
-// to deal in the Software without restriction, including without limitation
-// the rights to use, copy, modify, merge, publish, distribute, sublicense,
-// and/or sell copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following conditions:
-// 
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-// 
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-// DEALINGS IN THE SOFTWARE.
+
 
 
 var Sylvester = {
@@ -577,36 +549,6 @@ Matrix.Rotation = function(theta, a) {
 
 
 
-
-/**
- *  class FirminCSSMatrix
- *
- *  The [[FirminCSSMatrix]] class is a concrete implementation of the
- *  `CSSMatrix` interface defined in the [CSS 2D Transforms][2d] and
- *  [CSS 3D Transforms][3d] Module specifications.
- *
- *  [2d]: http://www.w3.org/TR/css3-2d-transforms/
- *  [3d]: http://www.w3.org/TR/css3-3d-transforms/
- *
- *  The implementation was largely copied from the `WebKitCSSMatrix` class, and
- *  the supparting maths libraries in the [WebKit][webkit] project. This is one
- *  reason why much of the code looks more like C++ than JavaScript.
- *
- *  [webkit]: http://webkit.org/
- *
- *  Its API is a superset of that provided by `WebKitCSSMatrix`, largely
- *  because various pieces of supporting code have been added as instance
- *  methods rather than pollute the global namespace. Examples of these include
- *  [[FirminCSSMatrix#isAffine]], [[FirminCSSMatrix#isIdentityOrTranslation]]
- *  and [[FirminCSSMatrix#adjoint]].
- **/
-
-/**
- *  new FirminCSSMatrix(domstr)
- *  - domstr (String): a string representation of a 2D or 3D transform matrix
- *    in the form given by the CSS transform property, i.e. just like the
- *    output from [[FirminCSSMatrix#toString]].
- **/
 FirminCSSMatrix = function(domstr) {
     this.m11 = this.m22 = this.m33 = this.m44 = 1;
     
@@ -724,16 +666,6 @@ FirminCSSMatrix.prototype.toString = function() {
 
 
 
-
-
-/*
- * @preserve Morf v0.1.5
- * http://www.joelambert.co.uk/morf
- *
- * Copyright 2011, Joe Lambert.
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
 
 var CSSMatrixDecomposed = function(obj) {
 	obj === undefined ? obj = {} : null;
