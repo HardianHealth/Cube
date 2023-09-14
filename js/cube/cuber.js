@@ -2,19 +2,10 @@
 
 /** @preserve
 
-	CUBER
+	CUBE
 	-----
 
 	
-	Cuber is a programmable Rubiks cube of sorts. 
-
-
-	Made with love by:
-	@author Mark Lundin - http://mark-lundin.com / @mark_lundin
-	@author Stewart Smith - stewd.io
-	@author Google Creative Lab
-
-
 
 	NOTATION
 
